@@ -1,0 +1,58 @@
+:root {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  --slate-900: #20262e;
+  --slate-700: #f2bed1;
+  --slate-600: #fdcedf;
+  --slate-500: #f8e8ee;
+  --slate-100: #f9f5f6;
+  --white: #fff;
+  --black: #000;
+  --mainSpacing: 0.03rem;
+  --mainTransition: all 0.2s ease;
+  --border: 1px solid var(--slate-700);
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--slate-100);
+  color: var(--slate-900);
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.btn {
+  outline: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  letter-spacing: var(--mainSpacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.btn:hover {
+  transform: scale(1.03);
+  transition: var(--mainTransition);
+}
+.btn--primary {
+  background-color: var(--slate-100);
+  color: var(--slate-900);
+  border: var(--border);
+}
+.btn--secondary {
+  background-color: var(--slate-600);
+  color: var(--slate-900);
+  border: 2px solid var(--slate-700);
+}
